@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team webWeavers</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <style>
+        /* Custom CSS styles */
+        body {
+            background-color: gray;
+            color: #c9c9c9;  /* Main body text color */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #007bff; /* Header text color */
+        }
+        .mainText p {
+            color: #666; /* Main section text color */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">FlavorWeaver</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#food">Foods</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trend">Trends</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#review">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#signin">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#signup">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="main row align-items-center">
+            <div class="col-md-6">
+                <div class="mainText">
+                    <h1>Discover the Best Food & Drinks in FlavorWeaver</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis incidunt officiis, vitae corporis ipsum optio architecto maxime doloremque facere dicta!</p>
+                    <button class="btn btn-primary">Explore Foods</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="f1.jpg" alt="foods" class="img-fluid">
+            </div>
+        </div>
+
+        <div id="food" class="mt-5">
+            <!-- Foods Section -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="food1.JPG" alt="" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Rooster Chicken Rice Bowl - $10</h5>
+                            <input type="number" class="quantity form-control mb-2" value="1" min="1">
+                            <button class="cart btn btn-primary" onclick="addToCart('Rooster Chicken Rice Bowl', 10)">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add other food cards similarly -->
+            </div>
+            <div id="cart" class="mt-5"></div>
+        </div>
+        <!-- Foods Section End -->
+        
+        <div id="review" class="mt-5">
+            <!-- Customer Reviews Section -->
+            <div class="reviewCard">
+                    <img src="r1 (1).jpg" alt="" class="img-fluid">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus modi reprehenderit culpa possimus!</p>
+                </div>
+            <!-- Place your review content here -->
+        </div>
+        
+        <div id="trend" class="mt-5">
+            <!-- Trending Foods Section --><div id="trend">
+            <div class="head">
+                <h1>Trending Foods</h1>
+            </div>
+            <div class="trendFood">
+                <div class="trends">
+                    <img src="blg1.jpg" alt="" class="img-fluid">
+                    <img src="blg2.JPG" alt="" class="img-fluid">
+                    <img src="blg3.JPG" alt="" class="img-fluid">
+
+                </div>
+                <div class="trends">
+                    <img src="blg4.JPG" alt="" class="img-fluid">
+                    <img src="blg5.jpg" alt="" class="img-fluid">
+                    <img src="blg6.jpg" alt="" class="img-fluid">
+
+                </div>
+                <div class="trends">
+                    <img src="food1.JPG" alt="" class="img-fluid">
+                    <img src="blg4.JPG" alt="" class="img-fluid">
+                    <img src="food3.JPG" alt="" class="img-fluid">
+
+                </div>
+            </div>
+            <!-- Place your trending foods content here -->
+        </div>
+        
+        <div id="blog" class="mt-5">
+            <!-- Food Blogs Section -->
+            <!-- Place your food blogs content here -->
+        </div>
+        
+        <div id="signin" class="mt-5">
+            <!-- Sign In Section -->
+            <div class="signin-form">
+                <h2 class="text-primary">Sign In</h2>
+                <form>
+                    <input type="email" class="form-control mb-2" placeholder="Email" required>
+                    <input type="password" class="form-control mb-2" placeholder="Password" required>
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                </form>
+            </div>
+        </div>
+        </div>
+         <div id="signup" class="mt-5">
+            <!-- Sign Up Section -->
+            <div class="signup-form">
+                <h2>Sign Up</h2>
+                <form>
+                    <input type="text" class="form-control mb-2" placeholder="Name" required>
+                    <input type="email" class="form-control mb-2" placeholder="Email" required>
+                    <input type="password" class="form-control mb-2" placeholder="Password" required>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer mt-5">
+            <!-- Footer Section -->
+            <div class="text">
+                <h3>About Us</h3>
+                <p>Welcome to FlavorWaves Nexus, where culinary excellence meets warm hospitality. Established with a passion for creating unforgettable dining experiences, we take pride in offering a haven where guests can indulge in delectable cuisine, unwind in a cozy atmosphere, and create cherished memories with friends and family.</p>
+            </div>
+            <div class="text">
+                <h3>Our Food</h3>
+                <p>Quality</p>
+                <p>Affordable</p>
+                <p>Best Price</p>
+                <p>Low Cost</p>
+            </div>
+            <div class="text">
+                <h3>Offers</h3>
+                <p>20% OFF</p>
+                <p>Free 1st meal</p>
+                <p>quality</p>
+                <p>Affordable</p>
+            </div>
+            <div class="text">
+                <h3>Connect Us</h3>
+                <p>Linked In</p>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+            </div>
+        </div>
+            <!-- Place your footer content here -->
+        <
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Your custom JavaScript -->
+    <script>
+        let cart = [];
+
+        function addToCart(itemName, price) {
+            const quantity = parseInt(document.querySelector('.quantity').value);
+            const item = { name: itemName, price: price, quantity: quantity };
+            cart.push(item);
+            updateCart();
+        }
+
+        function updateCart() {
+            let totalPrice = 0;
+            let cartContent = "<h2>Cart</h2>";
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                cartContent += `<p>${item.quantity}x ${item.name} - $${itemTotal}</p>`;
+                totalPrice += itemTotal;
+            });
+            cartContent += `<p>Total: $${totalPrice}</p>`;
+            document.getElementById('cart').innerHTML = cartContent;
+        }
+    </script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
